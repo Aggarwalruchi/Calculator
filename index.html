@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <h1 class="heading">Calculator</h1>
+    <table class="text-center calculator">
+        <thead>
+            <tr>
+                <th colspan="4" class="ans" id="ans-text">1</th>
+            </tr>
+            <tr>
+                <th colspan="4" class="text-field"><input type="text" id="input-field" readonly></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td><button id="btnAC" onclick="OnOff()"> AC</button> </td>
+                <td><button id="btnC" onclick="Clear()"> C </button></td>
+                <td><button id="btnBack" onclick="BtnBack()"> <- </button>
+                </td>
+                <td><button id="btn+" onclick="BtnAdd()"> + </button></td>
+            </tr>
+            <tr>
+                <td><button id="btn7" onclick="BtnSeven()"> 7 </button></td>
+                <td><button id="btn8" onclick="BtnEight()"> 8 </button></td>
+                <td><button id="btn9" onclick="BtnNine()"> 9 </button></td>
+                <td><button id="btn-" onclick="BtnSubtract()"> - </button></td>
+            </tr>
+            <tr>
+                <td><button id="btn4" onclick="BtnFour()"> 4 </button></td>
+                <td><button id="btn5" onclick="BtnFive()"> 5 </button></td>
+                <td><button id="btn6" onclick="BtnSix()"> 6 </button></td>
+                <td><button id="btnX" onclick="BtnMultiply()"> x </button></td>
+            </tr>
+            <tr>
+                <td><button id="btn1" onclick="BtnOne()"> 1 </button></td>
+                <td><button id="btn2" onclick="BtnTwo()"> 2 </button></td>
+                <td><button id="btn3" onclick="BtnThree()"> 3 </button></td>
+                <td><button id="btn/" onclick="BtnDivide()"> / </button></td>
+            </tr>
+            <tr>
+                <td><button id="btn0" onclick="BtnZero()"> 0 </button></td>
+                <td><button id="btn." onclick="BtnDot()"> . </button></td>
+                <td colspan="2"><button id="btn=" onclick="BtnEqual()"> = </button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="./JS/app.js"></script>
+</body>
+
+</html>
